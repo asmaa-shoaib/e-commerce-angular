@@ -1,0 +1,15 @@
+<form>
+  <div class="form-group">
+    <label class="form-label">product name</label>
+    <input type="text" class="form-control" [(ngModel)]="product.Name" name="Name">
+  </div>
+  <div class="form-group">
+    <label class="form-label">product Description</label>
+    <input type="text" class="form-control" [(ngModel)]="product.Description" name="Description">
+  </div>
+  <div class="form-group">
+    <label class="form-label">product price</label>
+    <input type="text" class="form-control" [(ngModel)]="product.Price" name="Price">
+  </div>
+  <button class="btn btn-primary" (click)="onAddproduct()">add product</button>
+</form>
