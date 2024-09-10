@@ -13,11 +13,19 @@ export class AddProductComponent {
     Price:0,
     Image:'1.jpg  '
   }
+
   @Output() ExportProduct=new EventEmitter();
 
   onAddproduct(){
     console.log(this.product);
     this.ExportProduct.emit(this.product);
+    this.product={
+      Name:'',
+      Description:'',
+      Price:0,
+      Image:'1.jpg'
+    }
   }
+
 
 }

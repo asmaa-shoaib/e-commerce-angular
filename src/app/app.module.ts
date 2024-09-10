@@ -7,6 +7,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
 import { FormsModule } from '@angular/forms';
 import { AddProductComponent } from './add-product/add-product.component';
+import { ChangeBackgroundDirective } from './Directives/change-background.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddProductComponent } from './add-product/add-product.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ChangeBackgroundDirective
   ],
   providers: [],
   bootstrap: [AppComponent]
