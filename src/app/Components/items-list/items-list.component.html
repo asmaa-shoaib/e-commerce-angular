@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <!-- @for (let item of items; track id) {
+      <div class="col-3">
+        <div class="item card">
+          <app-item>
+            <app-item-image [ImgUrl]="item.imgUrl" ></app-item-image>
+            <div class="card-body">
+              <h5 class="card-title">{{item.title}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted ">{{item.subtitle}}</h6>
+              <p class="card-text">{{item.Description}}</p>
+              <app-item-link [linkTitle]={{item.link}} [itemLink]={{item.link}}></app-item-link>
+              </div>
+            </app-item>
+            </div>
+        </div>
+    } -->
+    <div class="col-3" *ngFor="let item of items">
+      <div class="item card">
+        <app-item>
+          <app-item-image img [ImgUrl]="item.imgUrl" ></app-item-image>
+
+            <div class="card-body" body>
+              <h5 lik  class="card-title">{{item.title}}</h5>
+              <h6 subtitle class="card-subtitle mb-2 text-muted ">{{item.subtitle}}</h6>
+              <p  class="card-text">{{item.Description}}</p>
+              <div  class="bg-dark" >65<app-item-link lik [linkTitle]=item.link [itemLink]=item.link></app-item-link></div>
+            </div>
+            <ng-template appExampleZippyContent>
+              It depends on what you do with it.
+            </ng-template>
+          </app-item>
+          </div>
+      </div>
+    <!-- @empty{
+      <div class="col-12">
+        <p class="lead">no items now</p>
+      </div>
+    } -->
+
+
+  </div>
+</div>
